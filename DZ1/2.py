@@ -3,6 +3,7 @@
 # Какова вероятность того, что человек, не знающий код, откроет дверь с первой попытки?
 from math import factorial
 
+# Воспользуемся формулой подсчета количества сочетаний по k элементов из множества n
 def combinations(n, k):
     return (factorial(n)/(factorial(k)*factorial(n-k)))
 

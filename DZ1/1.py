@@ -3,6 +3,7 @@
 # б) Найти вероятность, что среди 4-х карт окажется хотя бы один туз.
 from math import factorial
 
+# Воспользуемся формулой подсчета количества сочетаний по k элементов из множества n
 def combinations(n, k):
     return (factorial(n)/(factorial(k)*factorial(n-k)))
 

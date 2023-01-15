@@ -2,6 +2,7 @@
 # Какова вероятность того, что все извлеченные детали окрашены?
 from math import factorial
 
+# Воспользуемся формулой подсчета количества сочетаний по k элементов из множества n
 def combinations(n, k):
     return (factorial(n)/(factorial(k)*factorial(n-k)))
 
