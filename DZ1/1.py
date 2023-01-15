@@ -1,10 +1,10 @@
 #Из колоды в 52 карты извлекаются случайным образом 4 карты.
 # a) Найти вероятность того, что все карты – крести
 # б) Найти вероятность, что среди 4-х карт окажется хотя бы один туз.
-import numpy as np
+from math import factorial
 
 def combinations(n, k):
-    return (np.math.factorial(n)/(np.math.factorial(k)*np.math.factorial(n-k)))
+    return (factorial(n)/(factorial(k)*factorial(n-k)))
 
 
 # a) Найти вероятность того, что все карты – крести

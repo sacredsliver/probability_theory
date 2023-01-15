@@ -1,9 +1,9 @@
 # В ящике имеется 15 деталей, из которых 9 окрашены. Рабочий случайным образом извлекает 3 детали. 
 # Какова вероятность того, что все извлеченные детали окрашены?
-import numpy as np
+from math import factorial
 
 def combinations(n, k):
-    return (np.math.factorial(n)/(np.math.factorial(k)*np.math.factorial(n-k)))
+    return (factorial(n)/(factorial(k)*factorial(n-k)))
 
 # P(A)=m/n - общее количество исходов будет определяться количеством сочетаний n = 3 из 15,
 # а количество благоприятных исходов - количеством сочетаний 3-х окрашенных деталей из 9 - m = 3 из 15
